@@ -153,4 +153,8 @@ contract Ballot {
     {
         winnerName_ = proposals[winningProposal()].name;
     }
+    
+    function getResults(uint i) public view returns(Proposal memory result){
+        return (result= proposals[i]);
+    }
 }
